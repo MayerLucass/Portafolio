@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0d;
+    color: #e6e6e6;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(10, 10, 12, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: #f2f2f2 !important;
+    font-weight: 300;
+}
+
+/* HERO */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #0d0d13, #111);
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.resaltado {
+    color: #6a4dfc;
+}
+
+.btn-main {
+    background: #6a4dfc;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #8a71ff;
+}
+
+/* SECCIONES */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* CARDS */
+.project-card {
+    background: #141419;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(120, 70, 255, 0.3);
+}
+
+/* SKILLS */
+.skill {
+    background: #15151b;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 8px;
+    display: inline-block;
+}
+
+.skill {
+    background: #15151b;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 8px;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 0 0px rgba(120, 70, 255, 0);
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(120, 70, 255, 0.6);
+}
+
+
+/* FOOTER */
+footer {
+    padding: 40px;
+    text-align: center;
+    background: #0a0a0c;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+/* BOTÓN WHATSAPP GLASS PREMIUM */
+.wpp-glass-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 58px;
+    height: 58px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 1px solid rgba(120, 70, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(120, 70, 255, 0.15);
+    z-index: 999;
+    animation: floatWpp 3s ease-in-out infinite;
+}
+
+/* Hover: neon violeta soft */
+.wpp-glass-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(120, 70, 255, 0.6),
+                0 0 10px rgba(120, 70, 255, 0.4);
+}
+
+/* Icono mas brillante */
+.wpp-glass-btn i {
+    filter: brightness(1.4);
+}
+
+/* Animación flotante suave */
+@keyframes floatWpp {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0px); }
+}
