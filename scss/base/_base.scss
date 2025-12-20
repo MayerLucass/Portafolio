@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: $font-main;
+  background: $bg-main;
+  color: $text-main;
+  scroll-behavior: smooth;
+}

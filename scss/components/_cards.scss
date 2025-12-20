@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+.project-card {
+  background: $bg-card;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform .3s, box-shadow .3s;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(120, 70, 255, 0.3);
+  }
+}

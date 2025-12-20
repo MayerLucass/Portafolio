@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+.btn-main {
+  background: $primary;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: 0.3s;
+
+  &:hover {
+    background: $primary-hover;
+  }
+}

@@ -1,0 +1,62 @@
+/* WhatsApp */
+.wpp-glass-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 58px;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 1px solid rgba(120, 70, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(120, 70, 255, 0.15);
+  z-index: 999;
+  animation: floatWpp 3s ease-in-out infinite;
+
+  &:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(120, 70, 255, 0.6),
+                0 0 10px rgba(120, 70, 255, 0.4);
+  }
+
+  i {
+    filter: brightness(1.4);
+  }
+}
+
+@keyframes floatWpp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/* GitHub */
+.github-bubble {
+  position: fixed;
+  bottom: 160px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(150,100,255,0.3);
+  font-size: 28px;
+  color: #c6a0ff;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(160,100,255,0.7);
+  }
+}
